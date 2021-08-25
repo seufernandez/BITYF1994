@@ -4,4 +4,64 @@
   padding: 0;
 }
 
+//Variaveis globais
+:root {
+  --white: #ffffff;
+
+  --grey1: #e1e1e6;
+  --grey5: #828282;
+  --grey7: #595959;
+  --grey9: #333333;
+  --grey10: #1f1f1f;
+
+  --cyan5: #61dafb;
+
+  --green1: #51ee38;
+  --green5: #21b30b;
+  --green10: #258f14;
+
+  --weakGreen: #248f1429;
+
+  --pastelOrange: #eba83a;
+  --Orange1: #ffa500;
+}
+
+//para telas tablet
+@media (min-width: 1080px) {
+  Html {
+    font-size: 97.75%; // 15px
+  }
+}
+
+//para telas mobile
+@media (min-width: 720px) {
+  Html {
+    font-size: 87.5%; // 14px
+  }
+}
+
+body {
+  // background-color: var(--grey10);
+  background-color: var(--grey10);
+  color: var(--white);
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font-family: 'Inter', sans-serif;
+  font: 400 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 // TODO
