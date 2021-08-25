@@ -8,5 +8,50 @@
   padding: 0 2rem;
 
   .posts {
+    max-width: 720px;
+    margin: 2rem auto 0;
+
+    a {
+      display: block;
+
+      & + a {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--grey9);
+      }
+      h1 {
+        color: orange;
+        font-weight: 700;
+        font-size: 1.8rem;
+      }
+
+      p {
+        color: var(--grey);
+        margin-top: 0.3rem;
+        font-size: 1.2rem;
+        line-height: 1.625rem;
+        margin-bottom: 0.5rem;
+      }
+
+      ul {
+        list-style: none;
+        display: inline-block;
+
+        color: var(--grey5);
+        font-size: 0.9rem;
+
+        li {
+          display: inline-block;
+
+          > svg {
+            margin-right: 0.3rem;
+          }
+
+          & + li {
+            margin-left: 24px;
+          }
+        }
+      }
+    }
   }
 }
